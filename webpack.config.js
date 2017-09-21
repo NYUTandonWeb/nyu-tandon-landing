@@ -48,7 +48,7 @@ module.exports = {
         bootstrap: bootstrapConfig
     },
     output: {
-        path: path.resolve(__dirname, "dist"),
+        path: path.resolve(__dirname, "docs"),
         filename: '[name].bundle.js'
     },
     module: {
@@ -73,7 +73,7 @@ module.exports = {
         ]
     },
     devServer: {
-        contentBase: path.join(__dirname, "dist"),
+        contentBase: path.join(__dirname, "docs"),
         compress: true,
         hot: true,
         open: true,
