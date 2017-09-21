@@ -1,0 +1,53 @@
+.wrapper {
+    height: 100vh;
+    min-height: 800px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.one {
+    padding-top: 135px;
+    grid-column: 5 / 1;
+    grid-row: 1;
+    background: rgba(233,171,88,.5) url('./images/hero.png')no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.two {
+    grid-column: 5 / 1;
+    grid-row: 2;
+    background-color: rgba(233,171,88,.7);
+    background: rgba(233,171,88,.5) url('./images/col2-top.png')no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.three {
+    grid-column: 5 / 1;
+    grid-row: 3;
+    background-color: rgba(233,171,88,.9);
+    background: rgba(233,171,88,.5) url('./images/col2-middle.png')no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.four {
+    grid-column: 5 / 1;
+    grid-row: 4;
+    background-color: rgba(233,171,88,1);
+    background: rgba(233,171,88,.5) url('./images/col2-bottom.png')no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+

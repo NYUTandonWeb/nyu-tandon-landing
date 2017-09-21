@@ -1,0 +1,25 @@
+.wrapper {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.one {
+  padding-top: 0;
+  grid-column: 1 / 4;
+  grid-row: 1 / 4;
+}
+
+.two {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.three {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.four {
+  grid-column: 4;
+  grid-row: 3;
+}
+

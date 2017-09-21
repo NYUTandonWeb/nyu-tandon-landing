@@ -1,0 +1,18 @@
+header {
+  position: absolute;
+  top: 0;
+  height: 165px;
+  display: inline-block;
+  width: 100%;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, .75) 0%, rgba(0, 0, 0, 0) 100%);
+
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  img{
+    max-width: 360px;
+  }
+}

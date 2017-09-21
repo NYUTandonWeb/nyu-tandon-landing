@@ -1,0 +1,24 @@
+h1, h2, h3, h4, h5{
+  color: #fff;
+  padding-right: 10px;
+}
+
+h1{
+	font-size: 42px;
+	font-weight: 300;
+	font-family: 'Mercury Display';
+}
+
+
+.tagline{
+	h3{
+		font-size: 20px;
+		font-family: 'Mercury Display';
+	}
+	h5{
+		font-family: 'Gotham';
+		text-transform: uppercase;
+		font-size: 12px;
+		margin-bottom: 12px;
+	}
+}
