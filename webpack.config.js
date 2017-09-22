@@ -9,8 +9,8 @@ const PurifyCSSPlugin = require('purifycss-webpack');
 const isProd = process.env.NODE_ENV === 'production'; //true or false
 const cssDev = [
 	'style-loader',
-	'css-loader?sourceMap',
-	'sass-loader?sourceMap',
+	'css-loader',
+	'sass-loader',
     'import-glob-loader',
 	{
 		loader: 'sass-resources-loader',
@@ -23,20 +23,29 @@ const cssDev = [
 	}];
 const cssProd = ExtractTextPlugin.extract({
     fallback: 'style-loader',
-    use: ['css-loader','sass-loader', {
-		loader: 'sass-resources-loader',
-            options: {
-    			// Provide path to the file with resources
-    			resources: [
-    				'./src/resources.scss'
-    			],
+    use: [
+            {
+                loader: 'css-loader',
             },
-        },
-        {
-            loader: 'import-glob-loader'
-        }
-	],
-    publicPath: '/'
+            {
+                loader: 'postcss-loader', // Run post css actions
+                    options: {
+                        plugins: function () { // post css plugins, can be exported to postcss.config.js
+                            return [
+                            require('precss'),
+                            require('autoprefixer')
+                            ];
+                        }
+                    }
+            },
+            {
+                loader: 'sass-loader'
+            },
+            {
+                loader: 'import-glob-loader'
+            }
+        ],
+        publicPath: '/'
 })
 const cssConfig = isProd ? cssProd : cssDev;
 
@@ -69,7 +78,7 @@ module.exports = {
                 ]
             },
             { test: /\.(woff2?)$/, use: 'url-loader?limit=10000&name=fonts/[name].[ext]' },
-            { test: /\.(ttf|eot)$/, use: 'file-loader?name=fonts/[name].[ext]' },
+            { test: /\.(ttf|eot)$/, use: 'file-loader?name=fonts/[name].[ext]' }
         ]
     },
     devServer: {
@@ -81,7 +90,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Project Demo',
+            title: 'NYU Tandon Landing',
             hash: false,
             template: './src/index.html'
         }),
@@ -103,18 +112,7 @@ module.exports = {
             "window.jQuery": "jquery",
             Tether: "tether",
             "window.Tether": "tether",
-            Popper: ['popper.js', 'default'],
-            Alert: "exports-loader?Alert!bootstrap/js/dist/alert",
-            Button: "exports-loader?Button!bootstrap/js/dist/button",
-            Carousel: "exports-loader?Carousel!bootstrap/js/dist/carousel",
-            Collapse: "exports-loader?Collapse!bootstrap/js/dist/collapse",
-            Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown",
-            Modal: "exports-loader?Modal!bootstrap/js/dist/modal",
-            Popover: "exports-loader?Popover!bootstrap/js/dist/popover",
-            Scrollspy: "exports-loader?Scrollspy!bootstrap/js/dist/scrollspy",
-            Tab: "exports-loader?Tab!bootstrap/js/dist/tab",
-            Tooltip: "exports-loader?Tooltip!bootstrap/js/dist/tooltip",
-            Util: "exports-loader?Util!bootstrap/js/dist/util",
+            Popper: ['popper.js', 'default']
         })
     ]
 }

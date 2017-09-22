@@ -1,24 +1,51 @@
 h1, h2, h3, h4, h5{
-  color: #fff;
   padding-right: 10px;
 }
 
 h1{
-	font-size: 42px;
+	color: #fff;
+	font-size: 32px;
 	font-weight: 300;
+    margin-bottom: 15px;
+    line-height: 1.2;
 	font-family: 'Mercury Display';
+}
+
+.title {
+  &-hero {
+    position: absolute;
+    bottom: 70px;
+    left: 30px;
+    img{
+    	display: none;
+    }
+  }
+  &-side {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+  }
 }
 
 
 .tagline{
 	h3{
-		font-size: 20px;
+		color: #000;
+		font-size: 24px;
 		font-family: 'Mercury Display';
 	}
 	h5{
+		color: $nyu-primary;
 		font-family: 'Gotham';
 		text-transform: uppercase;
-		font-size: 12px;
+		font-size: 16px;
 		margin-bottom: 12px;
+	}
+	&.title-hero{
+	    h5{
+	    	letter-spacing: 1px;
+	    	font-weight: 600;
+	    	color: #fff;
+	    }
 	}
 }

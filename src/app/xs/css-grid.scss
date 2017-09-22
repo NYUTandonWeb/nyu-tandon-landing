@@ -8,46 +8,81 @@
 }
 
 .one {
-    padding-top: 135px;
+    //padding-top: 335px;
     grid-column: 5 / 1;
     grid-row: 1;
+    .plyr__video-wrapper{
     background: rgba(233,171,88,.5) url('./images/hero.png')no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    }
+}
+
+video.full-vid {
+    height: 40vh;
+}
+
+ video {
+      /*object-fit: contain;*/
+/*       object-fit: fill; */
+      object-fit: cover;
+      width:100%;
+      height:50%;
+    }
+
+video::-webkit-media-controls {
+  display: none;
+}
+
+/* Could Use thise as well for Individual Controls */
+video::-webkit-media-controls-play-button {}
+
+video::-webkit-media-controls-volume-slider {}
+
+video::-webkit-media-controls-mute-button {}
+
+video::-webkit-media-controls-timeline {}
+
+video::-webkit-media-controls-current-time-display {}
+
+.plyr__controls{
+    display: none;
+}
+
+
+
+.one span,
+.two span,
+.three span,
+.four span {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+
+
+.two,
+.three,
+.four {
+    background-color: #fff;
+    border-bottom: #ddd 2px solid;
+    margin: 0 30px;
 }
 
 .two {
     grid-column: 5 / 1;
     grid-row: 2;
-    background-color: rgba(233,171,88,.7);
-    background: rgba(233,171,88,.5) url('./images/col2-top.png')no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 .three {
     grid-column: 5 / 1;
     grid-row: 3;
-    background-color: rgba(233,171,88,.9);
-    background: rgba(233,171,88,.5) url('./images/col2-middle.png')no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 .four {
     grid-column: 5 / 1;
     grid-row: 4;
-    background-color: rgba(233,171,88,1);
-    background: rgba(233,171,88,.5) url('./images/col2-bottom.png')no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 

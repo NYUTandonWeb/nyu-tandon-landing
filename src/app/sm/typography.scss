@@ -1,0 +1,27 @@
+h1{
+	font-size: 42px;
+	font-weight: 300;
+	font-family: 'Mercury Display';
+}
+
+.title {
+  &-hero {
+    bottom: 20px;
+    left: 20px;
+  }
+  &-side {
+    left: 20px;
+  }
+}
+
+.tagline{
+	h3{
+		color: #fff;
+		font-size: 26px;
+	}
+	h5{
+		color: #fff;
+		font-size: 12px;
+		margin-bottom: 12px;
+	}
+}

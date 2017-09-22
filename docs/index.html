@@ -5,24 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Webpack 2 and Twitter Bootstrap</title>
+    <title>NYU Tandon Landing</title>
+    <script src="https://cdn.plyr.io/2.0.13/plyr.js"></script>
+    <link href="https://cdn.plyr.io/2.0.7/plyr.css" rel="stylesheet" type="text/css" />
 <link href="/css/bootstrap.css" rel="stylesheet"><link href="/css/app.css" rel="stylesheet"></head>
 
 <body>
 
     <header>
         <div class="logo">
-            <img src="images/logo.png" alt="">
+            <div class="d-none d-md-block d-lg-block d-xl-block">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="d-md-none d-lg-none d-xl-none">
+                <img src="images/logo-mob.png" alt="">
+            </div>
         </div>
     </header>
 
     <div class="wrapper">
       <div class="one">
+
         <span>
+
             <div class="tagline title-hero">
+
                 <h1>Invention, Innovation &amp;<br> Entrepreneurship</h1>
+                <h5>Since 1854</h5>
+
+                <div class="actions">
+                    <img src="images/pause.png" alt="pause video" class="btn js-pause">
+                </div>
+
             </div>
+
+            <video poster="images/hero.png" class="full-vid" autoplay>
+              <source src="./video/splash.mp4" class="vid" type="video/mp4">
+            </video>
+
         </span>
+
       </div>
       <div class="two">
         <span>
@@ -50,6 +72,7 @@
       </div>
     </div>
 
+    <script>plyr.setup(options);</script>
 
 <script type="text/javascript" src="bootstrap.bundle.js"></script><script type="text/javascript" src="app.bundle.js"></script></body>
 
