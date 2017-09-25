@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/pause</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="T01_Home_XL" transform="translate(-166.000000, -1090.000000)" fill="#FFFFFF">
+            <g id="hero">
+                <g id="hero-copy-+-vid-controls" transform="translate(166.666667, 903.300000)">
+                    <g id="icon/pause" transform="translate(0.000000, 186.000000)">
+                        <g id="icon/pause/on-dark" transform="translate(0.000000, 0.750000)">
+                            <path d="M13,10.75 L15,10.75 L15,24.75 L13,24.75 L13,10.75 Z M21,10.75 L23,10.75 L23,24.75 L21,24.75 L21,10.75 Z M17.5,33 C26.0604136,33 33,26.0604136 33,17.5 C33,8.93958638 26.0604136,2 17.5,2 C8.93958638,2 2,8.93958638 2,17.5 C2,26.0604136 8.93958638,33 17.5,33 Z M17.5,35 C7.83501688,35 0,27.1649831 0,17.5 C0,7.83501688 7.83501688,0 17.5,0 C27.1649831,0 35,7.83501688 35,17.5 C35,27.1649831 27.1649831,35 17.5,35 Z" id="icon/pause"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -9,8 +9,8 @@ const PurifyCSSPlugin = require('purifycss-webpack');
 const isProd = process.env.NODE_ENV === 'production'; //true or false
 const cssDev = [
 	'style-loader',
-	'css-loader',
-	'sass-loader',
+	'css-loader?sourceMap',
+	'sass-loader?sourceMap',
     'import-glob-loader',
 	{
 		loader: 'sass-resources-loader',

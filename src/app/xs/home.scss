@@ -1,3 +1,49 @@
 .tagline{
   z-index: 9;
 }
+
+
+.action img{
+  float: left;
+}
+
+img.close{
+  max-width: 45px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 9999999999;
+  opacity: 1;
+  cursor: pointer;
+  -webkit-transition: .2s;
+     -moz-transition: .2s;
+      -ms-transition: .2s;
+       -o-transition: .2s;
+          transition: .2s;
+  &:hover{
+    opacity: .8;
+  }
+}
+// .fullscreen{
+//   position: absolute;
+//   right: 11px;
+//   bottom: 19px;
+//   z-index: 9;
+// }
+
+.actions, .fullscreen{
+  img{
+    max-width: 45px;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+    -webkit-transition: .2s;
+       -moz-transition: .2s;
+        -ms-transition: .2s;
+         -o-transition: .2s;
+            transition: .2s;
+    &:hover{
+      opacity: .8;
+    }
+  }
+}

@@ -23,6 +23,17 @@
         </div>
     </header>
 
+    <div id="#videoModal" class="modal fade youtube" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div data-dismiss="modal" aria-label="Close">
+            <img src="<%= require('./images/wht-close-btn.png') %>" alt="close" class="close">
+        </div>
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <iframe width="100%" height="675" src="https://www.youtube.com/embed/oORHqwxqC_0?autoplay=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
     <div class="wrapper">
       <div class="one">
 
@@ -34,13 +45,21 @@
                 <h5>Since 1854</h5>
 
                 <div class="actions">
-                    <img src="<%= require('./images/pause.png') %>" alt="pause video" class="btn js-pause">
-                    <img src="<%= require('./images/play.png') %>" alt="play video" class="d-none btn js-play">
+                    <img src="<%= require('./images/wht-pause-btn.png') %>" alt="pause video" class="js-pause" data-toggle="tooltip" data-placement="top" title="Pause Video">
+                    <img src="<%= require('./images/wht-play-btn.png') %>" alt="play video" class="d-none js-play" data-toggle="tooltip" data-placement="top" title="Play Video">
+                </div>
+
+
+                <div class="fullscreen">
+                    <div data-toggle="modal" data-target=".youtube"><img src="<%= require('./images/wht-fullscreen-btn.png') %>" alt="fullscreen" class="fullscreen" data-toggle="tooltip" data-placement="top" title="Fullscreen"></div>
                 </div>
 
             </div>
 
-            <video poster="<%= require('./images/hero.png') %>" class="full-vid" autoplay>
+
+
+
+            <video poster="<%= require('./images/hero.png') %>" class="full-vid"> <!-- autoplay loop> -->
               <source src="./video/splash.mp4" class="vid" type="video/mp4">
             </video>
 
