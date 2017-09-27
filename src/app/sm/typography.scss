@@ -8,6 +8,9 @@ h1{
   &-hero {
     bottom: 20px;
     left: 20px;
+    img{
+    	display: block;
+    }
   }
   &-side {
     left: 20px;

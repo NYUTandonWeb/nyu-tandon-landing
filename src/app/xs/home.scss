@@ -2,6 +2,57 @@
   z-index: 9;
 }
 
+.actions{
+  -webkit-transition: 1s;
+     -moz-transition: 1s;
+      -ms-transition: 1s;
+       -o-transition: 1s;
+          transition: 1s;
+            min-height: 0px;
+
+}
+
+.tooltip {
+  &-inner{
+    background: $tooltip-color;
+    color: #000;
+    padding: 10px 20px;
+    text-align: left;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+}
+
+.tooltip.bs-tooltip-right .arrow:before {
+    border-right-color: $tooltip-color !important;
+    left: 5px;
+}
+.tooltip.bs-tooltip-left .arrow:before {
+    border-left-color: $tooltip-color !important;
+}
+.tooltip.bs-tooltip-bottom .arrow:before {
+    border-bottom-color: $tooltip-color !important;
+}
+.tooltip.bs-tooltip-top .arrow:before {
+    border-top-color: $tooltip-color !important;
+}
+
+
+.modal-open .modal {
+    display: flex!important;
+    align-items: center!important;
+    .modal-dialog {
+        flex-grow: 1;
+    }
+}
+
+.modal{
+  background: #000;
+}
+
+.modal-content{
+  border: 0;
+}
 
 .action img{
   float: left;

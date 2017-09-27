@@ -8,9 +8,17 @@ video.full-vid {
     height:50%;
 }
 
-.modal-lg {
-    max-width: 1200px;
-    margin-top: 80px;
+.modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-content {
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
 }
 
 video::-webkit-media-controls {
