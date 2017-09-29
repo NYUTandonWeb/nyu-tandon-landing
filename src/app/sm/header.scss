@@ -1,19 +1,11 @@
 header {
-  position: absolute;
-  top: 0;
   height: 135px;
-  display: inline-block;
-  width: 100%;
   background: -webkit-linear-gradient(rgba(0, 0, 0, .75) 0%, rgba(0, 0, 0, 0) 100%);
-
 }
 
 .logo {
   left: 20px;
   img{
     max-width: 500px;
-    .mobile{
-      //@include invisible(invisible);
-    }
   }
 }

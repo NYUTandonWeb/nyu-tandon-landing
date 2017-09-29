@@ -8,20 +8,293 @@
     <title>NYU Tandon Landing</title>
     <script src="https://cdn.plyr.io/2.0.13/plyr.js"></script>
     <link href="https://cdn.plyr.io/2.0.7/plyr.css" rel="stylesheet" type="text/css" />
-<link href="/css/bootstrap.css" rel="stylesheet"><link href="/css/app.css" rel="stylesheet"></head>
+<link href="css/bootstrap.css" rel="stylesheet"><link href="css/app.css" rel="stylesheet"></head>
 
 <body>
 
     <header>
-        <div class="logo">
-            <div class="d-none d-md-block d-lg-block d-xl-block">
-                <img src="images/logo.png" alt="">
+        <!-- //// bkg-url //// -->
+        <div class="logo"></div>
+        <!-- //// bkg-url //// -->
+    </header>
+
+    <!-- ///////////////////////////////////////////// -->
+    <!-- ////////////////// MAIN MENU //////////////// -->
+    <!-- ///////////////////////////////////////////// -->
+    <div class="overlay overlay-menu">
+
+        <div class="overlay-close"></div>
+
+        <nav class="primary">
+            <div class="row justify-content-start">
+
+                <!-- ///// offset col-1 ///// -->
+                <div class="col-sm-1 pr-0"></div>
+                <!-- ///// offset col-1 ///// -->
+
+                <!-- /////////////////////////////////////// -->
+                <!-- ///////////// Primary Nav ///////////// -->
+                <!-- /////////////////////////////////////// -->
+                <div class="col-sm-4 pl-0">
+                    <div class="nav flex-column" id="tab" role="tablist">
+                        <ul>
+                            <!-- //////// Tab 1 ///////// -->
+                            <li>
+                                <a class="nav-link"
+                                    id="engineer-tomorrow-tab"
+                                    data-toggle="pill"
+                                    href="#home"
+                                    role="tab"
+                                    aria-controls="home"
+                                    aria-expanded="true">
+                                    <h3>Engineer Tomorrow</h3>
+                                    <span>Areas of Research Excellence</span>
+                                </a>
+                                <div class="caret d-none"></div>
+                            </li>
+
+                            <!-- //////// Tab 2 ///////// -->
+                            <li>
+                                <a class="nav-link"
+                                    id="academics-tab"
+                                    data-toggle="pill"
+                                    href="#profile"
+                                    role="tab"
+                                    aria-controls="profile"
+                                    aria-expanded="true">
+                                    <h3>Academics</h3>
+                                    <span>Departments &amp; Programs</span>
+                                </a>
+                                <div class="caret d-none"></div>
+                            </li>
+
+                            <!-- //////// Tab 3 ///////// -->
+                            <li>
+                                <a class="nav-link"
+                                    id="innovation-sapce-tab"
+                                    data-toggle="pill"
+                                    href="#messages"
+                                    role="tab"
+                                    aria-controls="messages"
+                                    aria-expanded="true">
+                                    <h3>Innovation Space</h3>
+                                    <span>Beyond the Classroom</span>
+                                </a>
+                                <div class="caret d-none"></div>
+                            </li>
+
+                            <!-- //////// Tab 4 ///////// -->
+                            <li>
+                                <a class="nav-link"
+                                    id="our-engineers-tab"
+                                    data-toggle="pill"
+                                    href="#settings"
+                                    role="tab"
+                                    aria-controls="settings"
+                                    aria-expanded="true">
+                                    <h3>Our Engineers</h3>
+                                    <span>The People Who Make Tandon</span>
+                                </a>
+                                <div class="caret d-none"></div>
+                            </li>
+
+                            <!-- //////// Tab 5 ///////// -->
+                            <li>
+                                <a
+                                    class="nav-link"
+                                    id="brooklyn-ny-tab"
+                                    data-toggle="pill"
+                                    href="#settings"
+                                    role="tab"
+                                    aria-controls="settings"
+                                    aria-expanded="true">
+                                    <h3>Brooklyn, NY</h3>
+                                    <span>Campus Life & Opportunities</span>
+                                </a>
+                                <div class="caret d-none"></div>
+                            </li>
+                        </ul>
+
+                    </div><!-- /.nav -->
+                </div><!-- /.col-4 -->
+                <!-- /////////////////////////////////////// -->
+                <!-- /////////// End Primary Nav /////////// -->
+                <!-- /////////////////////////////////////// -->
+
+
+
+                <!-- /////////////////////////////////////// -->
+                <!-- /////////// Featured Story //////////// -->
+                <!-- /////////////////////////////////////// -->
+                <div class="col-sm-5 featured-story">
+                    <div id="news">
+                        <a href="#0">
+                        <h4>Featured Story</h4>
+                        <h3>To Mars and Beyond: NYU Tandon and Partners Selected as New Hub for VR/AR in NYC</h3>
+                        <hr>
+                        <img src="images/vr-goggles.png" alt="" class="w-100">
+                        </a>
+                    </div>
+                </div>
+                <!-- /////////////////////////////////////// -->
+                <!-- ///////// End Featured Story ////////// -->
+                <!-- /////////////////////////////////////// -->
+
+                <div class="col-sm-5 tab-content d-none">
+                    <div class="tab-content" id="tabContent">
+                        <!-- //////// Tab 1 ///////// -->
+                        <div
+                            class="tab-pane fade show active"
+                            id="home"
+                            role="tabpanel"
+                            aria-labelledby="engineer-tomorrow-tab">
+                            <div class="engineer-tomorrow-tab">
+                                <div id="nav-beta">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <ul>
+                                                <li><a href="#0">Artificial Intelligence</a></li>
+                                                <li><a href="#0">Big Data</a></li>
+                                                <li><a href="#0">Energy Innovation</a></li>
+                                                <li><a href="#0">Integrated Digital Media</a></li>
+                                                <li><a href="#0">Robotics</a></li>
+                                                <li><a href="#0">Smart &amp; Sustainable Cities</a></li>
+                                                <li><a href="#0">Transportation</a></li>
+                                                <li><a href="#0">VR/AR</a></li>
+                                                <li><a href="#0">Wireless Technology</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <article class="post"><a href="#0">
+                                                <img src="images/new-advances.png" alt="" class="w-100">
+                                                <h4>New Advances</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum aliquid explicabo quidem nemo ipsa ullam.</p>
+                                            </a></article>
+                                            <p><br></p>
+                                            <article class="post"><a href="#0">
+                                                <img src="images/student-stories.png" alt="" class="w-100">
+                                                <h4>Student Stories</h4>
+                                                <p>Ullam, magnam? Sequi similique nulla eaque ex enim fuga quod architecto accusantium recusandae repellat!</p>
+                                            </a></article>
+                                        </div>
+                                    </div>
+                                </div><!-- /#nav-beta -->
+                            </div>
+                        </div>
+                        <!-- //////// Tab 2 ///////// -->
+                        <div
+                            class="tab-pane fade"
+                            id="profile"
+                            role="tabpanel"
+                            aria-labelledby="academics-tab">
+
+                                <div id="nav-beta">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <ul>
+                                                <h4>Departments</h4>
+                                                <li><a href="#0">Artificial Intelligence</a></li>
+                                                <li><a href="#0">Big Data</a></li>
+                                                <li><a href="#0">Energy Innovation</a></li>
+                                                <li><a href="#0">Integrated Digital Media</a></li>
+                                                <li><a href="#0">Robotics</a></li>
+                                                <li><a href="#0">Smart &amp; Sustainable Cities</a></li>
+                                                <li><a href="#0">Transportation</a></li>
+                                                <li><a href="#0">VR/AR</a></li>
+                                                <li><a href="#0">Wireless Technology</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <ul>
+                                                <h4>Degrees &amp; Programs</h4>
+                                                <li><a href="#0">Artificial Intelligence</a></li>
+                                                <li><a href="#0">Big Data</a></li>
+                                                <li><a href="#0">Energy Innovation</a></li>
+                                                <li><a href="#0">Integrated Digital Media</a></li>
+                                            </ul>
+                                            <ul>
+                                                <h4>Desgrees &amp; Programs</h4>
+                                                <li><a href="#0">Big Data</a></li>
+                                                <li><a href="#0">Energy Innovation</a></li>
+                                                <li><a href="#0">Integrated Digital Media</a></li>
+                                                <li><a href="#0">Robotics</a></li>
+                                                <li><a href="#0">Smart &amp; Sustainable Cities</a></li>
+                                                <li><a href="#0">Transportation</a></li>
+                                                <li><a href="#0">VR/AR</a></li>
+                                                <li><a href="#0">Wireless Technology</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div><!-- /#nav-beta -->
+
+                        </div>
+                        <!-- //////// Tab 3 ///////// -->
+                        <div
+                            class="tab-pane fade"
+                            id="messages"
+                            role="tabpanel"
+                            aria-labelledby="innovation-sapce-tab">
+
+                            <div class="news">
+                                <a href="#0">
+                                    Tab 3
+                                    <hr>
+                                    <img src="images/vr-goggles.png" alt="" class="w-100">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- //////// Tab 4 ///////// -->
+                        <div
+                            class="tab-pane fade"
+                            id="settings"
+                            role="tabpanel"
+                            aria-labelledby="our-engineers-tab">
+
+                            <div class="news">
+                                <a href="#0">
+                                    Tab 4
+                                    <hr>
+                                    <img src="images/vr-goggles.png" alt="" class="w-100">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="d-md-none d-lg-none d-xl-none">
-                <img src="images/logo-mob.png" alt="">
+
+        </nav>
+
+        <nav class="secondary">
+            <ul>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Admissions +</a></li>
+                <li><a href="#">About +</a></li>
+            </ul>
+        </nav>
+
+        <!-- /// dark-violet menu overlay /// -->
+        <div class="secondary-menu"></div>
+        <!-- /// dark-violet menu overlay /// -->
+
+    </div><!-- /.overlay -->
+    <!-- ///////////////////////////////////////////// -->
+    <!-- /////////////// END MAIN MENU /////////////// -->
+    <!-- ///////////////////////////////////////////// -->
+
+    <div id="#videoModal" class="modal fade youtube modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div data-dismiss="modal" aria-label="Close">
+            <img src="images/wht-close-btn.png" alt="close" class="close">
+        </div>
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/oORHqwxqC_0" frameborder="0" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
-    </header>
+    </div><!-- /#videoModal -->
 
     <div class="wrapper">
       <div class="one">
@@ -34,12 +307,28 @@
                 <h5>Since 1854</h5>
 
                 <div class="actions">
-                    <img src="images/pause.png" alt="pause video" class="btn js-pause">
-                </div>
+                    <span>
 
+                        <img src="images/wht-pause-btn.png" alt="pause video" class="js-pause" data-toggle="tooltip" data-placement="top" title="Pause Video">
+
+                        <img src="images/wht-play-btn.png" alt="play video" class="d-none js-play" data-toggle="tooltip" data-placement="top" title="Play Video">
+
+                        <div class="fullscreen">
+                            <img src="images/wht-info-btn.png"
+                            id="video-info"
+                            data-trigger="manual"
+                            alt="fullscreen"
+                            offset="20px"
+                            data-placement="right"
+                            data-html="true"
+                            title="Test content <a href='#0' title='test add link' target='_blank' data-toggle='modal' data-target='.youtube' '>link on content</a> to activate fullscreen video.">
+                        </div>
+
+                    </span>
+                </div>
             </div>
 
-            <video poster="images/hero.png" class="full-vid" autoplay>
+            <video poster="images/hero.png" class="full-vid" autoplay loop>
               <source src="./video/splash.mp4" class="vid" type="video/mp4">
             </video>
 

@@ -62,19 +62,32 @@ $("#video-info").popover({ trigger: "manual" , html: true, animation:false})
     });
 
 
+    $('.logo').on('click', function(){
+
+      instance.pause();
+        $('img.js-pause').addClass('d-none');
+        $('img.js-play').removeClass('d-none');
+
+    });
+
+    $('.overlay-close').on('click', function(){
+
+      instance.play();
+        $('img.js-play').addClass('d-none');
+        $('img.js-pause').removeClass('d-none');
+    });
+
 
     $('.youtube').on('show.bs.modal', function (e) {
-      // console.log('fired modal show');
+
       instance.pause();
-
-
 
       $('.bs-tooltip-right .arrow').hide();
 
     })
 
     $('.youtube').on('hidden.bs.modal', function (e) {
-      // console.log('fired modal hide');
+
       instance.play();
 
       //$('.tooltip.bs-tooltip-right .arrow').show();

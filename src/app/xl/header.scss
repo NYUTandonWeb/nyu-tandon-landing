@@ -3,6 +3,10 @@ header {
 }
 
 .logo {
-  left: 50px;
-  top: 30px;
+  	@include logo-placement;
+    background: url(images/logo.png) no-repeat center center;
+    -o-background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    background-size: 100% auto;
 }
