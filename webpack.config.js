@@ -6,6 +6,8 @@ const bootstrapEntryPoints = require('./webpack.bootstrap.config');
 const glob = require('glob');
 const PurifyCSSPlugin = require('purifycss-webpack');
 
+const buildPath = '/docs/video/';
+
 const isProd = process.env.NODE_ENV === 'production'; //true or false
 const cssDev = [
 	'style-loader',
@@ -44,8 +46,7 @@ const cssProd = ExtractTextPlugin.extract({
             {
                 loader: 'import-glob-loader'
             }
-        ],
-        publicPath: '/'
+        ]
 })
 const cssConfig = isProd ? cssProd : cssDev;
 
@@ -67,6 +68,12 @@ module.exports = {
                 use: cssConfig
             },
             {
+                test: /\.mp4$/,
+                use: [
+                    'file-loader?name=video/[name].[ext]',
+                ]
+            },
+            {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: 'babel-loader'
@@ -86,7 +93,7 @@ module.exports = {
         compress: true,
         hot: true,
         open: true,
-        stats: 'errors-only'
+        // stats: 'errors-only'
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -95,7 +102,7 @@ module.exports = {
             template: './src/index.html'
         }),
         new ExtractTextPlugin({
-            filename: 'css/[name].css',
+            filename: './css/[name].css',
             disable: !isProd,
             allChunks: true
         }),
@@ -112,7 +119,11 @@ module.exports = {
             "window.jQuery": "jquery",
             Tether: "tether",
             "window.Tether": "tether",
-            Popper: ['popper.js', 'default']
+            Popper: ['popper.js', 'default'],
+            Modal: 'exports-loader?Modal!bootstrap/js/dist/modal',
+            Popover: 'exports-loader?Popover!bootstrap/js/dist/popover',
+            Tab: 'exports-loader?Tab!bootstrap/js/dist/tab',
+            Tooltip: "exports-loader?Tooltip!bootstrap/js/dist/tooltip",
         })
     ]
 }
