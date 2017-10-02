@@ -10,9 +10,18 @@ header {
 }
 
 .logo {
-  @include logo-placement;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 385px;
+  height: 80px;
+  cursor: pointer;
+  background: url(images/logo-mob.png) no-repeat center center;
+  -o-background-size: 90% auto;
+  -webkit-background-size: 90% auto;
+  -moz-background-size: 90% auto;
+  background-size: 90% auto;
   img{
-    max-width: 330px;
     .mobile{
     }
   }
