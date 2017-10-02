@@ -154,7 +154,6 @@ p {
 }
 
 header {
-  top: 0;
   height: 165px;
   display: inline-block;
   width: 100%;
@@ -164,18 +163,16 @@ header {
 
 .logo,header {
   position: absolute;
+  top: 0;
 }
 
 .logo {
-  left: 43px;
-  top: 30px;
-  width: 500px;
+  left: 0;
+  width: 385px;
   height: 80px;
   cursor: pointer;
-}
-
-.logo img {
-  max-width: 330px;
+  background: url(images/logo-mob.png) no-repeat 50%;
+  background-size: 90% auto;
 }
 
 .tagline {
