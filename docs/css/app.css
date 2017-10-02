@@ -117,7 +117,7 @@ p {
 }
 
 .one .plyr__video-wrapper {
-  background: rgba(233,171,88,.5) url(/images/hero.png) no-repeat 50%;
+  background: rgba(233,171,88,.5) url(images/hero.png) no-repeat 50%;
   background-size: cover;
 }
 
@@ -239,7 +239,7 @@ img.close:hover {
   width: 500px;
   height: 80px;
   cursor: pointer;
-  background: url(/images/logo-open.png) no-repeat 50%;
+  background: url(images/logo-open.png) no-repeat 50%;
   background-size: 100% auto;
 }
 
@@ -247,10 +247,12 @@ img.close:hover {
   font-family: Mercury Display;
   text-align: left;
   position: relative;
-  top: 20vh;
+  top: 0;
+  padding-top: 200px;
   color: #fff;
   height: 100%;
   font-size: 40px;
+  z-index: -1;
 }
 
 .overlay-menu nav.primary h3 {
@@ -415,6 +417,10 @@ a.nav-link.active {
   opacity: .5;
 }
 
+.tab-content {
+  padding: 0 0 0 30px;
+}
+
 #news {
   position: relative;
   z-index: 9;
@@ -444,15 +450,15 @@ a.nav-link.active {
   top: 0;
   bottom: 0;
   right: 0;
-  left: 38%;
+  left: 41.6%;
   background: #26053b;
-  z-index: -1;
+  z-index: -2;
   opacity: 1;
 }
 
 .caret {
   position: absolute;
-  right: 63px;
+  right: 0;
   top: 28px;
 }
 
@@ -643,7 +649,7 @@ video::-webkit-media-controls {
     -ms-grid-column: 1;
     grid-column: 1;
     background-color: rgba(233,171,88,.7);
-    background: rgba(233,171,88,.5) url(/images/col2-top.png) no-repeat 50%;
+    background: rgba(233,171,88,.5) url(images/col2-top.png) no-repeat 50%;
     background-size: cover;
   }
 
@@ -655,7 +661,7 @@ video::-webkit-media-controls {
     -ms-grid-column: 2;
     grid-column: 2;
     background-color: rgba(233,171,88,.9);
-    background: rgba(233,171,88,.5) url(/images/col2-middle.png) no-repeat 50%;
+    background: rgba(233,171,88,.5) url(images/col2-middle.png) no-repeat 50%;
     background-size: cover;
   }
 
@@ -664,7 +670,7 @@ video::-webkit-media-controls {
     grid-column: 3;
     grid-row: 3/5;
     background-color: #e9ab58;
-    background: rgba(233,171,88,.5) url(/images/col2-bottom.png) no-repeat 50%;
+    background: rgba(233,171,88,.5) url(images/col2-bottom.png) no-repeat 50%;
     background-size: cover;
   }
 
@@ -771,7 +777,7 @@ video::-webkit-media-controls {
     width: 500px;
     height: 80px;
     cursor: pointer;
-    background: url(/images/logo.png) no-repeat 50%;
+    background: url(images/logo.png) no-repeat 50%;
     background-size: 100% auto;
   }
 
