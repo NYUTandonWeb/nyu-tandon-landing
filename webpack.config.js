@@ -4,25 +4,17 @@ const webpack = require('webpack');
 const path = require("path");
 const bootstrapEntryPoints = require('./webpack.bootstrap.config');
 const glob = require('glob');
-const PurifyCSSPlugin = require('purifycss-webpack');
+const BrowserSyncPlugin       = require('browser-sync-webpack-plugin');
 
 const buildPath = '/docs/video/';
 
 const isProd = process.env.NODE_ENV === 'production'; //true or false
 const cssDev = [
-	'style-loader',
-	'css-loader?sourceMap',
-	'sass-loader?sourceMap',
+    'style-loader',
+    'css-loader?url=false',
+    'sass-loader',
     'import-glob-loader',
-	{
-		loader: 'sass-resources-loader',
-		options: {
-			// Provide path to the file with resources
-			resources: [
-                './src/resources.scss'
-            ],
-		},
-	}];
+];
 const cssProd = ExtractTextPlugin.extract({
     fallback: 'style-loader',
     use: [
@@ -46,7 +38,8 @@ const cssProd = ExtractTextPlugin.extract({
             {
                 loader: 'import-glob-loader'
             }
-        ]
+        ],
+        publicPath: '../'
 })
 const cssConfig = isProd ? cssProd : cssDev;
 
@@ -88,14 +81,33 @@ module.exports = {
             { test: /\.(ttf|eot)$/, use: 'file-loader?name=fonts/[name].[ext]' }
         ]
     },
-    devServer: {
-        contentBase: path.join(__dirname, "docs"),
-        compress: true,
-        hot: true,
-        open: true,
-        // stats: 'errors-only'
-    },
+    // devServer: {
+    //     contentBase: path.join(__dirname, "docs"),
+    //     compress: true,
+    //     hot: true,
+    //     open: true,
+    //     // stats: 'errors-only'
+    // },
     plugins: [
+        new BrowserSyncPlugin({
+            proxy: 'nyu-landing.dev',
+            port: 4444,
+            files: [
+                '**/*.index'
+            ],
+            ghostMode: {
+                clicks: false,
+                location: false,
+                forms: false,
+                scroll: false
+            },
+            injectChanges: true,
+            logFileChanges: true,
+            logLevel: 'debug',
+            logPrefix: 'wepback',
+            notify: true,
+            reloadDelay: 0
+        }),
         new HtmlWebpackPlugin({
             title: 'NYU Tandon Landing',
             hash: false,
@@ -108,11 +120,6 @@ module.exports = {
         }),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NamedModulesPlugin(),
-        // Make sure this is after ExtractTextPlugin!
-        new PurifyCSSPlugin({
-            // Give paths to parse for rules. These should be absolute!
-            paths: glob.sync(path.join(__dirname, 'src/*.html'))
-        }),
         new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery",

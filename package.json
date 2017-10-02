@@ -21,6 +21,8 @@
     "babel-preset-react": "^6.22.0",
     "bootstrap": "^4.0.0-beta",
     "bootstrap-loader": "^2.0.0",
+    "browser-sync": "^2.18.13",
+    "browser-sync-webpack-plugin": "^1.2.0",
     "css-loader": "^0.26.4",
     "exports-loader": "^0.6.4",
     "extract-text-webpack-plugin": "^2.0.0-rc.0",
