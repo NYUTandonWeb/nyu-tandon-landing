@@ -70,7 +70,7 @@ module.exports = {
             {
                 test: /\.mp4$/,
                 use: [
-                    'file-loader?name=video/[name].[ext]',
+                    'file-loader?name=videos/[name].[ext]',
                 ]
             },
             {
