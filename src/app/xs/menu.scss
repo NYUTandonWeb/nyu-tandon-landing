@@ -8,8 +8,14 @@
 	//background: #57068C;
 	background: rgb(64, 4, 103);
 	.overlay-close {
-  		@include logo-placement;
-		background: url(./images/logo-open.png) no-repeat center center;
+  		//@include logo-placement;
+		position: absolute;
+		left: 20px;
+		top: 0px;
+	    width: 345px;
+	    height: 80px;
+	    cursor: pointer;
+		background: url(./images/logo-mob.png) no-repeat center center;
 	    -o-background-size: 100% auto;
 	    -webkit-background-size: 100% auto;
 	    -moz-background-size: 100% auto;
@@ -21,7 +27,7 @@
 			text-align: left;
 			position: relative;
 			top:0;
-    		padding-top: 200px;
+    		padding-top: 120px;
 			color: #fff;
 			height: 100%;
 			font-size: 40px;
@@ -75,22 +81,27 @@
 				flex-flow: column nowrap;
 				align-items: stretch;
 				list-style: none;
-				padding: 0;
 				margin: 0;
 				li {
 					position: relative;
-    				flex: 1;
+    				flex: none;
+    				margin-bottom: 20px;
 				}
 			}
 		}
 		&.secondary{
 		    position: absolute;
-		    top: 60px;
-		    right: 50px;
+		    top: auto;
+		    bottom: 0;
+		    right: 0;
+		    left: 0;
     		z-index: 9;
-		    font-size: 15px;
+		    font-size: 13px;
+		    background: #000;
+    		padding: 20px 0 10px 10px;
 		    font-weight: 700;
-		    letter-spacing: 1px;
+		    letter-spacing: 0px;
+		    border-bottom: #CCC;
 		    text-transform: uppercase;
 			font-family: 'Gotham';
 		    -webkit-transform: translateY(-50%);
@@ -275,6 +286,7 @@ a.nav-link{
 }
 
 .overlay-menu #news {
+	display: none;
 	-webkit-perspective: 600px;
 	perspective: 600px;
 }
@@ -297,9 +309,6 @@ a.nav-link{
 	-webkit-transform: translateY(25%) rotateX(-35deg);
 	transform: translateY(25%) rotateX(-35deg);
 }
-
-
-
 
 .overlay-menu .secondary {
 	-webkit-perspective: 600px;
