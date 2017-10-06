@@ -1,12 +1,17 @@
+.card-header{
+	border-radius: 0;
+}
+
 .overlay-menu {
 	position: fixed;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
+    overflow-y: scroll;
 	z-index: 100;
 	//background: #57068C;
-	background: rgb(64, 4, 103);
+	background: $nyu-medium-dark-violet;
 	.overlay-close {
   		//@include logo-placement;
 		position: absolute;
@@ -27,15 +32,69 @@
 			text-align: left;
 			position: relative;
 			top:0;
-    		padding-top: 120px;
+    		padding-top: 85px;
 			color: #fff;
 			height: 100%;
 			font-size: 40px;
 			z-index: -1;
-			h3{
-			    font-size: 42px;
-			    line-height: 1;
-				margin: 0 0 5px;
+			.card-header {
+				padding: 15px 20px 20px;
+				/* main menu fonts */
+				h3{
+				    font-size: 36px;
+				    line-height: 1;
+					margin: 0 0 5px;
+				}
+				span{
+					font-family: 'Gotham';
+				    font-size: 14px;
+				    font-weight: 600;
+					display: flex;
+					opacity: .5;
+				}
+				/* end main menu fonts */
+			}
+			.card-body{
+				background: $nyu-dark-violet;
+				font-size: 14px;
+				font-family: 'Gotham';
+				padding: 0;
+				position: relative;
+				ul{
+					height: auto;
+					margin: 0;
+					padding: 30px 20px 10px;
+				}
+				li{
+					margin-bottom: 20px;
+				}
+				a{
+					font-weight: 500;
+				}
+				.caret {
+				    position: absolute;
+					left: 50%;
+					-webkit-transform: translateX(-50%);
+					transform: translateX(-50%);
+				    width: 30px;
+				    top: -15px;
+				    -webkit-transition: top 0.2s;
+				    -moz-transition: top 0.2s;
+				    transition: top 0.2s;
+				    &.show{
+				    	top: 0;
+				    }
+				    &.hide{
+				    	top: -15px;
+				    }
+				    &:before {
+						content: '';
+					    border-top: 13px solid $nyu-medium-dark-violet;
+					    border-left: 13px solid transparent;
+					    border-bottom: 13px solid transparent;
+					    border-right: 13px solid transparent;
+					}
+				}
 			}
 			h4{
 				font-family: 'Gotham';
@@ -46,6 +105,12 @@
 				opacity: .5;
 				margin: 30px 0;
 			}
+			/* main menu fonts */
+			h3{
+			    font-size: 42px;
+			    line-height: 1;
+				margin: 0 0 5px;
+			}
 			span{
 				font-family: 'Gotham';
 			    font-size: 16px;
@@ -53,6 +118,7 @@
 				display: flex;
 				opacity: .5;
 			}
+			/* end main menu fonts */
 			hr {
 			    margin-top: 3rem;
 			    margin-bottom: 2rem;
@@ -90,7 +156,7 @@
 			}
 		}
 		&.secondary{
-		    position: absolute;
+		    position: fixed;
 		    top: auto;
 		    bottom: 0;
 		    right: 0;
@@ -174,7 +240,6 @@
 				}
 			}
 		}
-
 	}
 }
 

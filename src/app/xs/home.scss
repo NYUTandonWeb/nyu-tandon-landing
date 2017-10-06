@@ -2,6 +2,11 @@
   z-index: 9;
 }
 
+.modal {
+    background: purple;
+}
+
+
 .actions{
   -webkit-transition: 1s;
      -moz-transition: 1s;
@@ -50,10 +55,6 @@
     .modal-dialog {
         flex-grow: 1;
     }
-}
-
-.modal{
-  background: #000;
 }
 
 .modal-content{

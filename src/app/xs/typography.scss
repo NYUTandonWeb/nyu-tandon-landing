@@ -2,14 +2,6 @@ h1, h2, h3, h4, h5{
   padding-right: 10px;
 }
 
-h1{
-	color: #fff;
-	font-size: 32px;
-	font-weight: 300;
-    margin-bottom: 15px;
-    line-height: 1.2;
-	font-family: 'Mercury Display';
-}
 
 .title {
   &-hero {
@@ -29,6 +21,14 @@ h1{
 
 
 .tagline{
+	h1 {
+		color: #fff;
+		font-size: 32px;
+		font-weight: 300;
+	    margin-bottom: 15px;
+	    line-height: 1.2;
+		font-family: 'Mercury Display';
+	}
 	h3{
 		color: #000;
 		font-size: 24px;
