@@ -6,13 +6,13 @@ const bootstrapEntryPoints = require('./webpack.bootstrap.config');
 const glob = require('glob');
 const BrowserSyncPlugin       = require('browser-sync-webpack-plugin');
 
-const buildPath = '/docs/video/';
-
 const isProd = process.env.NODE_ENV === 'production'; //true or false
 const cssDev = [
     'style-loader',
-    'css-loader?url=false',
-    'sass-loader',
+    // 'css-loader?url=false',
+    // 'sass-loader',
+    'css-loader?sourceMap',
+    'sass-loader?sourceMap',
     'import-glob-loader',
 ];
 const cssProd = ExtractTextPlugin.extract({
@@ -72,7 +72,7 @@ module.exports = {
                 use: 'babel-loader'
             },
             {
-               test: /\.(png|svg|jp?g|gif|ttf|eot)$/i, 
+               test: /\.(png|svg|jp?g|gif|ttf|eot)$/i,
                 use: [
                     'file-loader?name=images/[name].[ext]',
                 ]
@@ -81,33 +81,33 @@ module.exports = {
             { test: /\.(ttf|eot)$/, use: 'file-loader?name=fonts/[name].[ext]' }
         ]
     },
-    // devServer: {
-    //     contentBase: path.join(__dirname, "docs"),
-    //     compress: true,
-    //     hot: true,
-    //     open: true,
-    //     // stats: 'errors-only'
-    // },
+    devServer: {
+        contentBase: path.join(__dirname, "docs"),
+        compress: true,
+        hot: true,
+        open: true,
+        // stats: 'errors-only'
+    },
     plugins: [
-        new BrowserSyncPlugin({
-            proxy: 'nyu-landing.dev',
-            port: 4444,
-            files: [
-                '**/*.index'
-            ],
-            ghostMode: {
-                clicks: false,
-                location: false,
-                forms: false,
-                scroll: false
-            },
-            injectChanges: true,
-            logFileChanges: true,
-            logLevel: 'debug',
-            logPrefix: 'wepback',
-            notify: true,
-            reloadDelay: 0
-        }),
+        // new BrowserSyncPlugin({
+        //     proxy: 'nyu-landing.dev',
+        //     port: 4444,
+        //     files: [
+        //         './src/*.index'
+        //     ],
+        //     ghostMode: {
+        //         clicks: false,
+        //         location: false,
+        //         forms: false,
+        //         scroll: false
+        //     },
+        //     injectChanges: true,
+        //     logFileChanges: true,
+        //     logLevel: 'debug',
+        //     logPrefix: 'wepback',
+        //     notify: true,
+        //     reloadDelay: 0
+        // }),
         new HtmlWebpackPlugin({
             title: 'NYU Tandon Landing',
             hash: false,
@@ -129,8 +129,10 @@ module.exports = {
             Popper: ['popper.js', 'default'],
             Modal: 'exports-loader?Modal!bootstrap/js/dist/modal',
             Popover: 'exports-loader?Popover!bootstrap/js/dist/popover',
+            Collapse: "exports-loader?Collapse!bootstrap/js/dist/collapse",
             Tab: 'exports-loader?Tab!bootstrap/js/dist/tab',
             Tooltip: "exports-loader?Tooltip!bootstrap/js/dist/tooltip",
+            Util: "exports-loader?Util!bootstrap/js/dist/util"
         })
     ]
 }
