@@ -52,4 +52,26 @@ export function menu() {
 
 	});
 
+// $('#accordion').collapse({
+//   toggle: true
+// });
+
+
+
+	$('.card').on('show.bs.collapse', function (e) {
+
+	  $(this).find('.caret').addClass('show');
+
+	  $(this).find('.caret').removeClass('hide');
+
+	});
+
+	$('.card').on('hide.bs.collapse', function () {
+
+	  $(this).find('.caret').removeClass('show');
+
+	  $(this).find('.caret').addClass('hide');
+
+	});
+
 };
