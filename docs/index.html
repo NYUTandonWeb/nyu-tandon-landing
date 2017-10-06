@@ -8,7 +8,7 @@
     <title>NYU Tandon Landing</title>
     <script src="https://cdn.plyr.io/2.0.13/plyr.js"></script>
     <link href="https://cdn.plyr.io/2.0.7/plyr.css" rel="stylesheet" type="text/css" />
-<link href="./css/bootstrap.css" rel="stylesheet"><link href="./css/app.css" rel="stylesheet"></head>
+<link href="./css/app.css" rel="stylesheet"><link href="./css/bootstrap.css" rel="stylesheet"></head>
 
 <body>
 
@@ -21,12 +21,13 @@
     <!-- ///////////////////////////////////////////// -->
     <!-- ////////////////// MAIN MENU //////////////// -->
     <!-- ///////////////////////////////////////////// -->
+
     <div class="overlay overlay-menu">
 
         <div class="overlay-close"></div>
 
         <nav class="primary">
-            <div class="row justify-content-start">
+            <div class="row">
 
                 <!-- ///// offset col-1 ///// -->
                 <div class="col-0 col-lg-1 pr-0"></div>
@@ -36,7 +37,7 @@
                 <!-- ///////////// Primary Nav ///////////// -->
                 <!-- /////////////////////////////////////// -->
                 <div class="col-12 col-lg-4 pl-0">
-                    <div class="nav flex-column" id="tab" role="tablist">
+                    <div class="nav flex-column d-none d-sm-none d-md-none d-lg-block d-xl-block" id="tab" role="tablist">
                         <ul>
                             <!-- //////// Tab 1 ///////// -->
                             <li>
@@ -114,14 +115,13 @@
                                 <div class="caret d-none"></div>
                             </li>
                         </ul>
-
                     </div><!-- /.nav -->
+
+
                 </div><!-- /.col-4 -->
                 <!-- /////////////////////////////////////// -->
                 <!-- /////////// End Primary Nav /////////// -->
                 <!-- /////////////////////////////////////// -->
-
-
 
                 <!-- /////////////////////////////////////// -->
                 <!-- /////////// Featured Story //////////// -->
@@ -135,12 +135,13 @@
                         <img src="images/vr-goggles.png" alt="" class="w-100">
                         </a>
                     </div>
+
                 </div>
                 <!-- /////////////////////////////////////// -->
                 <!-- ///////// End Featured Story ////////// -->
                 <!-- /////////////////////////////////////// -->
 
-                <div class="col-sm-7 tab-content d-none">
+                <div class="col-sm-7 tab-content d-none d-none-xs d-none-sm">
                     <div class="tab-content" id="tabContent">
                         <!-- //////// Tab 1 ///////// -->
                         <div
@@ -357,10 +358,230 @@
                         </div>
 
                     </div>
-                </div>
-            </div>
 
-        </nav>
+                </div>
+
+            </div><!-- /.row -->
+
+
+
+            <!-- /////////////////////////////////////// -->
+            <!-- ///////////// Accordian Nav /////////// -->
+            <!-- /////////////////////////////////////// -->
+            <div id="accordion" role="tablist">
+
+                <div class="card">
+
+                    <div class="card-header"
+                        role="tab"
+                        id="headingOne">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse"
+                                data-delay='{"show":"5000", "hide":"3000"}'
+                                href="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <h3>Engineer Tomorrow</h3>
+                                <span>Areas of Research Excellence</span>
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne"
+                        class="collapse"
+                        data-delay='{"show":"5000", "hide":"3000"}'
+                        role="tabpanel"
+                        aria-labelledby="headingOne"
+                        data-parent="#accordion">
+                        <div class="card-body">
+                        <ul>
+                            <li><a href="#0">Artificial Intelligence</a></li>
+                            <li><a href="#0">Big Data</a></li>
+                            <li><a href="#0">Energy Innovation</a></li>
+                            <li><a href="#0">Integrated Digital Media</a></li>
+                            <li><a href="#0">Robotics</a></li>
+                            <li><a href="#0">Smart &amp; Sustainable Cities</a></li>
+                            <li><a href="#0">Transportation</a></li>
+                            <li><a href="#0">VR/AR</a></li>
+                            <li><a href="#0">Wireless Technology</a></li>
+                            </ul>
+                            <div class="caret"></div>
+                        </div>
+                    </div>
+
+                </div><!-- /.card -->
+
+                <div class="card">
+
+                    <div class="card-header"
+                        role="tab"
+                        id="headingTwo">
+                        <h5 class="mb-0">
+                            <a class="collapsed"
+                                data-toggle="collapse"
+                                href="#collapseTwo"
+                                aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                <h3>Academics</h3>
+                                <span>Departments &amp; Programs</span>
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapseTwo"
+                        class="collapse"
+                        role="tabpanel"
+                        aria-labelledby="headingTwo"
+                        data-parent="#accordion">
+                        <div class="card-body">
+                            <ul>
+                                <li><a href="#0">Artificial Intelligence</a></li>
+                                <li><a href="#0">Big Data</a></li>
+                                <li><a href="#0">Energy Innovation</a></li>
+                                <li><a href="#0">Integrated Digital Media</a></li>
+                                <li><a href="#0">Robotics</a></li>
+                                <li><a href="#0">Smart &amp; Sustainable Cities</a></li>
+                                <li><a href="#0">Transportation</a></li>
+                                <li><a href="#0">VR/AR</a></li>
+                                <li><a href="#0">Wireless Technology</a></li>
+                            </ul>
+                            <div class="caret"></div>
+                        </div>
+                    </div>
+
+                </div><!-- /.card -->
+
+                <div class="card">
+
+                    <div class="card-header"
+                        role="tab"
+                        id="headingThree">
+                        <h5 class="mb-0">
+                            <a class="collapsed"
+                                data-toggle="collapse"
+                                href="#collapseThree"
+                                aria-expanded="false"
+                                aria-controls="collapseThree">
+                                <h3>Innovation Space</h3>
+                                <span>Beyond the Classroom</span>
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapseThree"
+                        class="collapse"
+                        role="tabpanel"
+                        aria-labelledby="headingThree"
+                        data-parent="#accordion">
+                        <div class="card-body">
+                            <ul>
+                                <li><a href="#0">Artificial Intelligence</a></li>
+                                <li><a href="#0">Big Data</a></li>
+                                <li><a href="#0">Energy Innovation</a></li>
+                                <li><a href="#0">Integrated Digital Media</a></li>
+                                <li><a href="#0">Robotics</a></li>
+                                <li><a href="#0">Smart &amp; Sustainable Cities</a></li>
+                                <li><a href="#0">Transportation</a></li>
+                                <li><a href="#0">VR/AR</a></li>
+                                <li><a href="#0">Wireless Technology</a></li>
+                            </ul>
+                            <div class="caret"></div>
+                        </div>
+                    </div>
+
+                </div><!-- /.card -->
+
+
+                <div class="card">
+
+                    <div class="card-header"
+                        role="tab"
+                        id="headingFour">
+                       <h5 class="mb-0">
+                            <a class="collapsed"
+                                data-toggle="collapse"
+                                href="#collapseFour"
+                                aria-expanded="false"
+                                aria-controls="collapseFour">
+                                <h3>Our Engineers</h3>
+                                <span>The People Who Make Tandon</span>
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapseFour"
+                        class="collapse"
+                        role="tabpanel"
+                        aria-labelledby="headingFour"
+                        data-parent="#accordion">
+                        <div class="card-body">
+                            <ul>
+                                <li><a href="#0">Artificial Intelligence</a></li>
+                                <li><a href="#0">Big Data</a></li>
+                                <li><a href="#0">Energy Innovation</a></li>
+                                <li><a href="#0">Integrated Digital Media</a></li>
+                                <li><a href="#0">Robotics</a></li>
+                                <li><a href="#0">Smart &amp; Sustainable Cities</a></li>
+                                <li><a href="#0">Transportation</a></li>
+                                <li><a href="#0">VR/AR</a></li>
+                                <li><a href="#0">Wireless Technology</a></li>
+                            </ul>
+                            <div class="caret"></div>
+                        </div>
+                    </div>
+
+                </div><!-- /.card -->
+
+
+
+                <div class="card">
+
+                    <div class="card-header"
+                        role="tab"
+                        id="headingFive">
+                       <h5 class="mb-0">
+                            <a class="collapsed"
+                                data-toggle="collapse"
+                                href="#collapseFive"
+                                aria-expanded="false"
+                                aria-controls="collapseFive">
+                                <h3>Brooklyn, NY</h3>
+                                <span>Campus Life & Opportunities</span>
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapseFive"
+                        class="collapse"
+                        role="tabpanel"
+                        aria-labelledby="headingFive"
+                        data-parent="#accordion">
+                        <div class="card-body">
+                            <ul>
+                                <li><a href="#0">Artificial Intelligence</a></li>
+                                <li><a href="#0">Big Data</a></li>
+                                <li><a href="#0">Energy Innovation</a></li>
+                                <li><a href="#0">Integrated Digital Media</a></li>
+                                <li><a href="#0">Robotics</a></li>
+                                <li><a href="#0">Smart &amp; Sustainable Cities</a></li>
+                                <li><a href="#0">Transportation</a></li>
+                                <li><a href="#0">VR/AR</a></li>
+                                <li><a href="#0">Wireless Technology</a></li>
+                            </ul>
+                            <div class="caret"></div>
+                        </div>
+                    </div>
+
+                </div><!-- /.card -->
+
+
+
+            </div><!-- #accordian -->
+            <!-- /////////////////////////////////////// -->
+            <!-- ///////////// Accordian Nav /////////// -->
+            <!-- /////////////////////////////////////// -->
+
+        </nav><!-- /.primary -->
 
         <nav class="secondary">
             <ul>
@@ -369,13 +590,13 @@
                 <li><a href="#">Admissions +</a></li>
                 <li><a href="#">About +</a></li>
             </ul>
-        </nav>
+        </nav><!-- /.secondary -->
 
         <!-- /// dark-violet menu overlay /// -->
         <div class="secondary-menu"></div>
         <!-- /// dark-violet menu overlay /// -->
-
     </div><!-- /.overlay -->
+
     <!-- ///////////////////////////////////////////// -->
     <!-- /////////////// END MAIN MENU /////////////// -->
     <!-- ///////////////////////////////////////////// -->
@@ -431,7 +652,8 @@
 
         </span>
 
-      </div>
+      </div><!-- /.one -->
+
       <div class="two">
         <span>
             <div class="tagline title-side">
@@ -439,7 +661,9 @@
                 <h3>Life and Study in Brooklyn</h3>
             </div>
         </span>
-      </div>
+        <div class="bkg"></div>
+      </div><!-- /.two -->
+
       <div class="three">
         <span>
             <div class="tagline title-side">
@@ -447,7 +671,9 @@
                 <h3>A Rich History in NYC Engineering</h3>
             </div>
         </span>
-      </div>
+        <div class="bkg"></div>
+      </div><!-- /.three -->
+
       <div class="four">
         <span>
             <div class="tagline title-side">
@@ -455,9 +681,12 @@
                 <h3>Tandon Team Makes Hyperloop Possible</h3>
             </div>
         </span>
-      </div>
-    </div>
+      </div><!-- /.four -->
 
-<script type="text/javascript" src="bootstrap.bundle.js"></script><script type="text/javascript" src="app.bundle.js"></script></body>
+    </div><!-- /.wrapper -->
+
+
+
+<script type="text/javascript" src="app.bundle.js"></script><script type="text/javascript" src="bootstrap.bundle.js"></script></body>
 
 </html>
