@@ -12,10 +12,30 @@
 
 <body>
 
-    <header>
-        <!-- //// bkg-url //// -->
-        <div class="logo"></div>
-        <!-- //// bkg-url //// -->
+    <header role="banner" class="banner">
+
+        <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+        <button class="hamburger hamburger--squeeze" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <nav id="navbar-example2" role="navigation" class="navbar navbar-light">
+
+            <a class="navbar-brand" href="#">
+                <div class="logo"></div>
+            </a>
+
+<div class="box">
+  <div class="container-2">
+      <span class="icon"><i class="fa fa-search"></i></span>
+      <input type="search" id="search" placeholder="Search..." />
+  </div>
+</div>
+        </nav>
+
     </header>
 
     <!-- ///////////////////////////////////////////// -->
@@ -24,136 +44,184 @@
 
     <div class="overlay overlay-menu">
 
-        <div class="overlay-close"></div>
-
         <nav class="primary">
-            <div class="row">
+            <div class="container">
+                <div class="row">
 
-                <!-- ///// offset col-1 ///// -->
-                <div class="col-0 col-lg-1 pr-0"></div>
-                <!-- ///// offset col-1 ///// -->
+                    <!-- ///// offset col-1 ///// -->
+                    <!-- ///// offset col-1 ///// -->
 
-                <!-- /////////////////////////////////////// -->
-                <!-- ///////////// Primary Nav ///////////// -->
-                <!-- /////////////////////////////////////// -->
-                <div class="col-12 col-lg-4 pl-0">
-                    <div class="nav flex-column d-none d-sm-none d-md-none d-lg-block d-xl-block" id="tab" role="tablist">
-                        <ul>
-                            <!-- //////// Tab 1 ///////// -->
-                            <li>
-                                <a class="nav-link"
-                                    id="engineer-tomorrow-tab"
-                                    data-toggle="pill"
-                                    href="#home"
-                                    role="tab"
-                                    aria-controls="home"
-                                    aria-expanded="true">
-                                    <h3>Engineer Tomorrow</h3>
-                                    <span>Areas of Research Excellence</span>
-                                </a>
-                                <div class="caret d-none"></div>
-                            </li>
+                    <!-- /////////////////////////////////////// -->
+                    <!-- ///////////// Primary Nav ///////////// -->
+                    <!-- /////////////////////////////////////// -->
+                    <div class="col-12 col-lg-4 pl-0">
 
-                            <!-- //////// Tab 2 ///////// -->
-                            <li>
-                                <a class="nav-link"
-                                    id="academics-tab"
-                                    data-toggle="pill"
-                                    href="#profile"
-                                    role="tab"
-                                    aria-controls="profile"
-                                    aria-expanded="true">
-                                    <h3>Academics</h3>
-                                    <span>Departments &amp; Programs</span>
-                                </a>
-                                <div class="caret d-none"></div>
-                            </li>
+                        <nav class="secondary">
+                            <ul>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Admissions +</a></li>
+                                <li><a href="#">About +</a></li>
+                            </ul>
+                        </nav><!-- /.secondary -->
 
-                            <!-- //////// Tab 3 ///////// -->
-                            <li>
-                                <a class="nav-link"
-                                    id="innovation-sapce-tab"
-                                    data-toggle="pill"
-                                    href="#messages"
-                                    role="tab"
-                                    aria-controls="messages"
-                                    aria-expanded="true">
-                                    <h3>Innovation Space</h3>
-                                    <span>Beyond the Classroom</span>
-                                </a>
-                                <div class="caret d-none"></div>
-                            </li>
+                        <div class="nav flex-column d-none d-sm-none d-md-none d-lg-block d-xl-block" id="tab" role="tablist">
+                            <ul>
+                                <!-- //////// Tab 1 ///////// -->
+                                <li>
+                                    <a class="nav-link"
+                                        id="engineer-tomorrow-tab"
+                                        data-toggle="pill"
+                                        href="#home"
+                                        role="tab"
+                                        aria-controls="home"
+                                        aria-expanded="true">
+                                        <h3>Engineer Tomorrow</h3>
+                                        <span>Areas of Research Excellence</span>
+                                    </a>
+                                    <div class="caret d-none"></div>
+                                </li>
 
-                            <!-- //////// Tab 4 ///////// -->
-                            <li>
-                                <a class="nav-link"
-                                    id="our-engineers-tab"
-                                    data-toggle="pill"
-                                    href="#settings"
-                                    role="tab"
-                                    aria-controls="settings"
-                                    aria-expanded="true">
-                                    <h3>Our Engineers</h3>
-                                    <span>The People Who Make Tandon</span>
-                                </a>
-                                <div class="caret d-none"></div>
-                            </li>
+                                <!-- //////// Tab 2 ///////// -->
+                                <li>
+                                    <a class="nav-link"
+                                        id="academics-tab"
+                                        data-toggle="pill"
+                                        href="#profile"
+                                        role="tab"
+                                        aria-controls="profile"
+                                        aria-expanded="true">
+                                        <h3>Academics</h3>
+                                        <span>Departments &amp; Programs</span>
+                                    </a>
+                                    <div class="caret d-none"></div>
+                                </li>
 
-                            <!-- //////// Tab 5 ///////// -->
-                            <li>
-                                <a
-                                    class="nav-link"
-                                    id="brooklyn-ny-tab"
-                                    data-toggle="pill"
-                                    href="#settings"
-                                    role="tab"
-                                    aria-controls="settings"
-                                    aria-expanded="true">
-                                    <h3>Brooklyn, NY</h3>
-                                    <span>Campus Life & Opportunities</span>
-                                </a>
-                                <div class="caret d-none"></div>
-                            </li>
-                        </ul>
-                    </div><!-- /.nav -->
+                                <!-- //////// Tab 3 ///////// -->
+                                <li>
+                                    <a class="nav-link"
+                                        id="innovation-sapce-tab"
+                                        data-toggle="pill"
+                                        href="#messages"
+                                        role="tab"
+                                        aria-controls="messages"
+                                        aria-expanded="true">
+                                        <h3>Innovation Space</h3>
+                                        <span>Beyond the Classroom</span>
+                                    </a>
+                                    <div class="caret d-none"></div>
+                                </li>
+
+                                <!-- //////// Tab 4 ///////// -->
+                                <li>
+                                    <a class="nav-link"
+                                        id="our-engineers-tab"
+                                        data-toggle="pill"
+                                        href="#settings"
+                                        role="tab"
+                                        aria-controls="settings"
+                                        aria-expanded="true">
+                                        <h3>Our Engineers</h3>
+                                        <span>The People Who Make Tandon</span>
+                                    </a>
+                                    <div class="caret d-none"></div>
+                                </li>
+
+                                <!-- //////// Tab 5 ///////// -->
+                                <li>
+                                    <a
+                                        class="nav-link"
+                                        id="brooklyn-ny-tab"
+                                        data-toggle="pill"
+                                        href="#settings"
+                                        role="tab"
+                                        aria-controls="settings"
+                                        aria-expanded="true">
+                                        <h3>Brooklyn, NY</h3>
+                                        <span>Campus Life & Opportunities</span>
+                                    </a>
+                                    <div class="caret d-none"></div>
+                                </li>
+                            </ul>
+                        </div><!-- /.nav -->
 
 
-                </div><!-- /.col-4 -->
-                <!-- /////////////////////////////////////// -->
-                <!-- /////////// End Primary Nav /////////// -->
-                <!-- /////////////////////////////////////// -->
+                    </div><!-- /.col-4 -->
+                    <!-- /////////////////////////////////////// -->
+                    <!-- /////////// End Primary Nav /////////// -->
+                    <!-- /////////////////////////////////////// -->
 
-                <!-- /////////////////////////////////////// -->
-                <!-- /////////// Featured Story //////////// -->
-                <!-- /////////////////////////////////////// -->
-                <div class="col-sm-5 col-lg-5 featured-story">
-                    <div id="news">
-                        <a href="#0">
-                        <h4>Featured Story</h4>
-                        <h3>To Mars and Beyond: NYU Tandon and Partners Selected as New Hub for VR/AR in NYC</h3>
-                        <hr>
-                        <img src="<%= require('./images/vr-goggles.png') %>" alt="" class="w-100">
-                        </a>
+                    <!-- /////////////////////////////////////// -->
+                    <!-- /////////// Featured Story //////////// -->
+                    <!-- /////////////////////////////////////// -->
+                    <div class="col-12 col-lg-5 featured-story">
+                        <div id="news">
+                            <a href="#0">
+                            <h4>Featured Story</h4>
+                            <h3>To Mars and Beyond: NYU Tandon and Partners Selected as New Hub for VR/AR in NYC</h3>
+                            <hr>
+                            <img src="<%= require('./images/vr-goggles.png') %>" alt="" class="w-100">
+                            </a>
+                        </div>
+
                     </div>
+                    <!-- /////////////////////////////////////// -->
+                    <!-- ///////// End Featured Story ////////// -->
+                    <!-- /////////////////////////////////////// -->
 
-                </div>
-                <!-- /////////////////////////////////////// -->
-                <!-- ///////// End Featured Story ////////// -->
-                <!-- /////////////////////////////////////// -->
+                    <div class="col-sm-7 tab-content d-none d-none-xs d-none-sm">
+                        <div class="tab-content" id="tabContent">
+                            <!-- //////// Tab 1 ///////// -->
+                            <div
+                                class="tab-pane fade show active"
+                                id="home"
+                                role="tabpanel"
+                                aria-labelledby="engineer-tomorrow-tab">
+                                <div class="engineer-tomorrow-tab">
+                                    <div id="nav-beta" class="nav-close">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-4">
+                                                <ul>
+                                                    <li><a href="#0">Artificial Intelligence</a></li>
+                                                    <li><a href="#0">Big Data</a></li>
+                                                    <li><a href="#0">Energy Innovation</a></li>
+                                                    <li><a href="#0">Integrated Digital Media</a></li>
+                                                    <li><a href="#0">Robotics</a></li>
+                                                    <li><a href="#0">Smart &amp; Sustainable Cities</a></li>
+                                                    <li><a href="#0">Transportation</a></li>
+                                                    <li><a href="#0">VR/AR</a></li>
+                                                    <li><a href="#0">Wireless Technology</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xs-5 col-lg-5">
+                                                <article class="post"><a href="#0">
+                                                    <img src="<%= require('./images/new-advances.png') %>" alt="" class="w-100">
+                                                    <h4>New Advances</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum aliquid explicabo quidem nemo ipsa ullam.</p>
+                                                </a></article>
+                                                <p><br></p>
+                                                <article class="post"><a href="#0">
+                                                    <img src="<%= require('./images/student-stories.png') %>" alt="" class="w-100">
+                                                    <h4>Student Stories</h4>
+                                                    <p>Ullam, magnam? Sequi similique nulla eaque ex enim fuga quod architecto accusantium recusandae repellat!</p>
+                                                </a></article>
+                                            </div>
+                                        </div>
+                                    </div><!-- /#nav-beta -->
+                                </div>
+                            </div>
+                            <!-- //////// Tab 2 ///////// -->
+                            <div
+                                class="tab-pane fade"
+                                id="profile"
+                                role="tabpanel"
+                                aria-labelledby="academics-tab">
 
-                <div class="col-sm-7 tab-content d-none d-none-xs d-none-sm">
-                    <div class="tab-content" id="tabContent">
-                        <!-- //////// Tab 1 ///////// -->
-                        <div
-                            class="tab-pane fade show active"
-                            id="home"
-                            role="tabpanel"
-                            aria-labelledby="engineer-tomorrow-tab">
-                            <div class="engineer-tomorrow-tab">
                                 <div id="nav-beta" class="nav-close">
                                     <div class="row">
                                         <div class="col-12 col-lg-4">
                                             <ul>
+                                                <h4>Departments</h4>
                                                 <li><a href="#0">Artificial Intelligence</a></li>
                                                 <li><a href="#0">Big Data</a></li>
                                                 <li><a href="#0">Energy Innovation</a></li>
@@ -165,7 +233,74 @@
                                                 <li><a href="#0">Wireless Technology</a></li>
                                             </ul>
                                         </div>
-                                        <div class="col-xs-5 col-lg-5">
+                                        <div class="col-12 col-lg-4">
+                                            <ul>
+                                                <h4>Degrees &amp; Programs</h4>
+                                                <li><a href="#0">Artificial Intelligence</a></li>
+                                                <li><a href="#0">Big Data</a></li>
+                                                <li><a href="#0">Energy Innovation</a></li>
+                                                <li><a href="#0">Integrated Digital Media</a></li>
+                                            </ul>
+                                            <ul>
+                                                <h4>Desgrees &amp; Programs</h4>
+                                                <li><a href="#0">Big Data</a></li>
+                                                <li><a href="#0">Energy Innovation</a></li>
+                                                <li><a href="#0">Integrated Digital Media</a></li>
+                                                <li><a href="#0">Robotics</a></li>
+                                                <li><a href="#0">Smart &amp; Sustainable Cities</a></li>
+                                                <li><a href="#0">Transportation</a></li>
+                                                <li><a href="#0">VR/AR</a></li>
+                                                <li><a href="#0">Wireless Technology</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div><!-- /#nav-beta -->
+
+                            </div>
+                            <!-- //////// Tab 3 ///////// -->
+                            <div
+                                class="tab-pane fade"
+                                id="messages"
+                                role="tabpanel"
+                                aria-labelledby="innovation-sapce-tab">
+
+                                <div id="nav-beta" class="nav-close">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-4">
+                                            <ul>
+                                                <h4>Departments</h4>
+                                                <li><a href="#0">Artificial Intelligence</a></li>
+                                                <li><a href="#0">Big Data</a></li>
+                                                <li><a href="#0">Energy Innovation</a></li>
+                                                <li><a href="#0">Integrated Digital Media</a></li>
+                                                <li><a href="#0">Robotics</a></li>
+                                                <li><a href="#0">Smart &amp; Sustainable Cities</a></li>
+                                                <li><a href="#0">Transportation</a></li>
+                                                <li><a href="#0">VR/AR</a></li>
+                                                <li><a href="#0">Wireless Technology</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <ul>
+                                                <h4>Degrees &amp; Programs</h4>
+                                                <li><a href="#0">Artificial Intelligence</a></li>
+                                                <li><a href="#0">Big Data</a></li>
+                                                <li><a href="#0">Energy Innovation</a></li>
+                                                <li><a href="#0">Integrated Digital Media</a></li>
+                                            </ul>
+                                            <ul>
+                                                <h4>Desgrees &amp; Programs</h4>
+                                                <li><a href="#0">Big Data</a></li>
+                                                <li><a href="#0">Energy Innovation</a></li>
+                                                <li><a href="#0">Integrated Digital Media</a></li>
+                                                <li><a href="#0">Robotics</a></li>
+                                                <li><a href="#0">Smart &amp; Sustainable Cities</a></li>
+                                                <li><a href="#0">Transportation</a></li>
+                                                <li><a href="#0">VR/AR</a></li>
+                                                <li><a href="#0">Wireless Technology</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 col-lg-4 pr-8">
                                             <article class="post"><a href="#0">
                                                 <img src="<%= require('./images/new-advances.png') %>" alt="" class="w-100">
                                                 <h4>New Advances</h4>
@@ -180,195 +315,88 @@
                                         </div>
                                     </div>
                                 </div><!-- /#nav-beta -->
+
                             </div>
-                        </div>
-                        <!-- //////// Tab 2 ///////// -->
-                        <div
-                            class="tab-pane fade"
-                            id="profile"
-                            role="tabpanel"
-                            aria-labelledby="academics-tab">
+                            <!-- //////// Tab 4 ///////// -->
+                            <div
+                                class="tab-pane fade"
+                                id="settings"
+                                role="tabpanel"
+                                aria-labelledby="our-engineers-tab">
 
-                            <div id="nav-beta" class="nav-close">
-                                <div class="row">
-                                    <div class="col-12 col-lg-4">
-                                        <ul>
-                                            <h4>Departments</h4>
-                                            <li><a href="#0">Artificial Intelligence</a></li>
-                                            <li><a href="#0">Big Data</a></li>
-                                            <li><a href="#0">Energy Innovation</a></li>
-                                            <li><a href="#0">Integrated Digital Media</a></li>
-                                            <li><a href="#0">Robotics</a></li>
-                                            <li><a href="#0">Smart &amp; Sustainable Cities</a></li>
-                                            <li><a href="#0">Transportation</a></li>
-                                            <li><a href="#0">VR/AR</a></li>
-                                            <li><a href="#0">Wireless Technology</a></li>
-                                        </ul>
+                                <div id="nav-beta" class="nav-close">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-4">
+                                            <ul>
+                                                <h4>Departments</h4>
+                                                <li><a href="#0">Artificial Intelligence</a></li>
+                                                <li><a href="#0">Big Data</a></li>
+                                                <li><a href="#0">Energy Innovation</a></li>
+                                                <li><a href="#0">Integrated Digital Media</a></li>
+                                                <li><a href="#0">Robotics</a></li>
+                                                <li><a href="#0">Smart &amp; Sustainable Cities</a></li>
+                                                <li><a href="#0">Transportation</a></li>
+                                                <li><a href="#0">VR/AR</a></li>
+                                                <li><a href="#0">Wireless Technology</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <ul>
+                                                <h4>Degrees &amp; Programs</h4>
+                                                <li><a href="#0">Artificial Intelligence</a></li>
+                                                <li><a href="#0">Big Data</a></li>
+                                                <li><a href="#0">Energy Innovation</a></li>
+                                                <li><a href="#0">Integrated Digital Media</a></li>
+                                            </ul>
+                                            <ul>
+                                                <h4>Desgrees &amp; Programs</h4>
+                                                <li><a href="#0">Big Data</a></li>
+                                                <li><a href="#0">Energy Innovation</a></li>
+                                                <li><a href="#0">Integrated Digital Media</a></li>
+                                                <li><a href="#0">Robotics</a></li>
+                                                <li><a href="#0">Smart &amp; Sustainable Cities</a></li>
+                                                <li><a href="#0">Transportation</a></li>
+                                                <li><a href="#0">VR/AR</a></li>
+                                                <li><a href="#0">Wireless Technology</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <ul>
+                                                <h4>Degrees &amp; Programs</h4>
+                                                <li><a href="#0">Artificial Intelligence</a></li>
+                                                <li><a href="#0">Big Data</a></li>
+                                                <li><a href="#0">Energy Innovation</a></li>
+                                                <li><a href="#0">Integrated Digital Media</a></li>
+                                            </ul>
+                                            <ul>
+                                                <h4>Desgrees &amp; Programs</h4>
+                                                <li><a href="#0">Big Data</a></li>
+                                                <li><a href="#0">Energy Innovation</a></li>
+                                                <li><a href="#0">Integrated Digital Media</a></li>
+                                                <li><a href="#0">Robotics</a></li>
+                                                <li><a href="#0">Smart &amp; Sustainable Cities</a></li>
+                                                <li><a href="#0">Transportation</a></li>
+                                                <li><a href="#0">VR/AR</a></li>
+                                                <li><a href="#0">Wireless Technology</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div class="col-12 col-lg-4">
-                                        <ul>
-                                            <h4>Degrees &amp; Programs</h4>
-                                            <li><a href="#0">Artificial Intelligence</a></li>
-                                            <li><a href="#0">Big Data</a></li>
-                                            <li><a href="#0">Energy Innovation</a></li>
-                                            <li><a href="#0">Integrated Digital Media</a></li>
-                                        </ul>
-                                        <ul>
-                                            <h4>Desgrees &amp; Programs</h4>
-                                            <li><a href="#0">Big Data</a></li>
-                                            <li><a href="#0">Energy Innovation</a></li>
-                                            <li><a href="#0">Integrated Digital Media</a></li>
-                                            <li><a href="#0">Robotics</a></li>
-                                            <li><a href="#0">Smart &amp; Sustainable Cities</a></li>
-                                            <li><a href="#0">Transportation</a></li>
-                                            <li><a href="#0">VR/AR</a></li>
-                                            <li><a href="#0">Wireless Technology</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div><!-- /#nav-beta -->
+                                </div><!-- /#nav-beta -->
 
-                        </div>
-                        <!-- //////// Tab 3 ///////// -->
-                        <div
-                            class="tab-pane fade"
-                            id="messages"
-                            role="tabpanel"
-                            aria-labelledby="innovation-sapce-tab">
-
-                            <div id="nav-beta" class="nav-close">
-                                <div class="row">
-                                    <div class="col-12 col-lg-4">
-                                        <ul>
-                                            <h4>Departments</h4>
-                                            <li><a href="#0">Artificial Intelligence</a></li>
-                                            <li><a href="#0">Big Data</a></li>
-                                            <li><a href="#0">Energy Innovation</a></li>
-                                            <li><a href="#0">Integrated Digital Media</a></li>
-                                            <li><a href="#0">Robotics</a></li>
-                                            <li><a href="#0">Smart &amp; Sustainable Cities</a></li>
-                                            <li><a href="#0">Transportation</a></li>
-                                            <li><a href="#0">VR/AR</a></li>
-                                            <li><a href="#0">Wireless Technology</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-12 col-lg-4">
-                                        <ul>
-                                            <h4>Degrees &amp; Programs</h4>
-                                            <li><a href="#0">Artificial Intelligence</a></li>
-                                            <li><a href="#0">Big Data</a></li>
-                                            <li><a href="#0">Energy Innovation</a></li>
-                                            <li><a href="#0">Integrated Digital Media</a></li>
-                                        </ul>
-                                        <ul>
-                                            <h4>Desgrees &amp; Programs</h4>
-                                            <li><a href="#0">Big Data</a></li>
-                                            <li><a href="#0">Energy Innovation</a></li>
-                                            <li><a href="#0">Integrated Digital Media</a></li>
-                                            <li><a href="#0">Robotics</a></li>
-                                            <li><a href="#0">Smart &amp; Sustainable Cities</a></li>
-                                            <li><a href="#0">Transportation</a></li>
-                                            <li><a href="#0">VR/AR</a></li>
-                                            <li><a href="#0">Wireless Technology</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-12 col-lg-4 pr-8">
-                                        <article class="post"><a href="#0">
-                                            <img src="<%= require('./images/new-advances.png') %>" alt="" class="w-100">
-                                            <h4>New Advances</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum aliquid explicabo quidem nemo ipsa ullam.</p>
-                                        </a></article>
-                                        <p><br></p>
-                                        <article class="post"><a href="#0">
-                                            <img src="<%= require('./images/student-stories.png') %>" alt="" class="w-100">
-                                            <h4>Student Stories</h4>
-                                            <p>Ullam, magnam? Sequi similique nulla eaque ex enim fuga quod architecto accusantium recusandae repellat!</p>
-                                        </a></article>
-                                    </div>
-                                </div>
-                            </div><!-- /#nav-beta -->
-
-                        </div>
-                        <!-- //////// Tab 4 ///////// -->
-                        <div
-                            class="tab-pane fade"
-                            id="settings"
-                            role="tabpanel"
-                            aria-labelledby="our-engineers-tab">
-
-                            <div id="nav-beta" class="nav-close">
-                                <div class="row">
-                                    <div class="col-12 col-lg-4">
-                                        <ul>
-                                            <h4>Departments</h4>
-                                            <li><a href="#0">Artificial Intelligence</a></li>
-                                            <li><a href="#0">Big Data</a></li>
-                                            <li><a href="#0">Energy Innovation</a></li>
-                                            <li><a href="#0">Integrated Digital Media</a></li>
-                                            <li><a href="#0">Robotics</a></li>
-                                            <li><a href="#0">Smart &amp; Sustainable Cities</a></li>
-                                            <li><a href="#0">Transportation</a></li>
-                                            <li><a href="#0">VR/AR</a></li>
-                                            <li><a href="#0">Wireless Technology</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-12 col-lg-4">
-                                        <ul>
-                                            <h4>Degrees &amp; Programs</h4>
-                                            <li><a href="#0">Artificial Intelligence</a></li>
-                                            <li><a href="#0">Big Data</a></li>
-                                            <li><a href="#0">Energy Innovation</a></li>
-                                            <li><a href="#0">Integrated Digital Media</a></li>
-                                        </ul>
-                                        <ul>
-                                            <h4>Desgrees &amp; Programs</h4>
-                                            <li><a href="#0">Big Data</a></li>
-                                            <li><a href="#0">Energy Innovation</a></li>
-                                            <li><a href="#0">Integrated Digital Media</a></li>
-                                            <li><a href="#0">Robotics</a></li>
-                                            <li><a href="#0">Smart &amp; Sustainable Cities</a></li>
-                                            <li><a href="#0">Transportation</a></li>
-                                            <li><a href="#0">VR/AR</a></li>
-                                            <li><a href="#0">Wireless Technology</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-12 col-lg-4">
-                                        <ul>
-                                            <h4>Degrees &amp; Programs</h4>
-                                            <li><a href="#0">Artificial Intelligence</a></li>
-                                            <li><a href="#0">Big Data</a></li>
-                                            <li><a href="#0">Energy Innovation</a></li>
-                                            <li><a href="#0">Integrated Digital Media</a></li>
-                                        </ul>
-                                        <ul>
-                                            <h4>Desgrees &amp; Programs</h4>
-                                            <li><a href="#0">Big Data</a></li>
-                                            <li><a href="#0">Energy Innovation</a></li>
-                                            <li><a href="#0">Integrated Digital Media</a></li>
-                                            <li><a href="#0">Robotics</a></li>
-                                            <li><a href="#0">Smart &amp; Sustainable Cities</a></li>
-                                            <li><a href="#0">Transportation</a></li>
-                                            <li><a href="#0">VR/AR</a></li>
-                                            <li><a href="#0">Wireless Technology</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div><!-- /#nav-beta -->
+                            </div>
 
                         </div>
 
                     </div>
 
-                </div>
-
-            </div><!-- /.row -->
-
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
 
 
             <!-- /////////////////////////////////////// -->
             <!-- ///////////// Accordian Nav /////////// -->
             <!-- /////////////////////////////////////// -->
-            <div id="accordion" role="tablist">
+            <div id="accordion" class="d-none" role="tablist">
 
                 <div class="card">
 
@@ -376,7 +404,8 @@
                         role="tab"
                         id="headingOne">
                         <h5 class="mb-0">
-                            <a data-toggle="collapse"
+                            <a class="collapsed"
+                                data-toggle="collapse"
                                 href="#collapseOne"
                                 aria-expanded="true"
                                 aria-controls="collapseOne">
@@ -581,14 +610,6 @@
 
         </nav><!-- /.primary -->
 
-        <nav class="secondary">
-            <ul>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Admissions +</a></li>
-                <li><a href="#">About +</a></li>
-            </ul>
-        </nav><!-- /.secondary -->
 
         <!-- /// dark-violet menu overlay /// -->
         <div class="secondary-menu"></div>
@@ -612,7 +633,7 @@
         </div>
     </div><!-- /#videoModal -->
 
-    <div class="wrapper">
+    <div id="content" class="wrapper" tabindex="-1">
       <div class="one">
 
         <span>
@@ -682,8 +703,6 @@
       </div><!-- /.four -->
 
     </div><!-- /.wrapper -->
-
-
 
 </body>
 

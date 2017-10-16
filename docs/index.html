@@ -12,10 +12,45 @@
 
 <body>
 
-    <header>
-        <!-- //// bkg-url //// -->
-        <div class="logo"></div>
-        <!-- //// bkg-url //// -->
+
+    <header role="banner" class="banner">
+
+  <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<button class="hamburger hamburger--collapse" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+
+        <nav id="navbar-example2" role="navigation" class="navbar navbar-light">
+
+            <a class="navbar-brand" href="#">
+                <div class="logo"></div>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#fat">@fat</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#mdo">@mdo</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#one">one</a>
+                        <a class="dropdown-item" href="#two">two</a>
+                        <div role="separator" class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#three">three</a>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+
     </header>
 
     <!-- ///////////////////////////////////////////// -->
@@ -23,8 +58,6 @@
     <!-- ///////////////////////////////////////////// -->
 
     <div class="overlay overlay-menu">
-
-        <div class="overlay-close"></div>
 
         <nav class="primary">
             <div class="row">
@@ -37,6 +70,14 @@
                 <!-- ///////////// Primary Nav ///////////// -->
                 <!-- /////////////////////////////////////// -->
                 <div class="col-12 col-lg-4 pl-0">
+        <nav class="secondary">
+            <ul>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Admissions +</a></li>
+                <li><a href="#">About +</a></li>
+            </ul>
+        </nav><!-- /.secondary -->
                     <div class="nav flex-column d-none d-sm-none d-md-none d-lg-block d-xl-block" id="tab" role="tablist">
                         <ul>
                             <!-- //////// Tab 1 ///////// -->
@@ -376,8 +417,8 @@
                         role="tab"
                         id="headingOne">
                         <h5 class="mb-0">
-                            <a data-toggle="collapse"
-                                data-delay='{"show":"5000", "hide":"3000"}'
+                            <a class="collapsed"
+                                data-toggle="collapse"
                                 href="#collapseOne"
                                 aria-expanded="true"
                                 aria-controls="collapseOne">
@@ -389,7 +430,6 @@
 
                     <div id="collapseOne"
                         class="collapse"
-                        data-delay='{"show":"5000", "hide":"3000"}'
                         role="tabpanel"
                         aria-labelledby="headingOne"
                         data-parent="#accordion">
@@ -583,14 +623,6 @@
 
         </nav><!-- /.primary -->
 
-        <nav class="secondary">
-            <ul>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Admissions +</a></li>
-                <li><a href="#">About +</a></li>
-            </ul>
-        </nav><!-- /.secondary -->
 
         <!-- /// dark-violet menu overlay /// -->
         <div class="secondary-menu"></div>
@@ -614,7 +646,7 @@
         </div>
     </div><!-- /#videoModal -->
 
-    <div class="wrapper">
+    <div id="content" class="wrapper" tabindex="-1">
       <div class="one">
 
         <span>

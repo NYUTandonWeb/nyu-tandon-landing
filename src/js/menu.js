@@ -1,12 +1,14 @@
 export function menu() {
 
-	$('.logo').on('click', function(){
+	$('button.hamburger').on('click', function(){
+
+		$(this).toggleClass('is-active');
 
 		$('.overlay').toggleClass('open');
 
-	});
+		$('.secondary').toggleClass('open');
 
-	$('.overlay-close').on('click', function(){
+
 
 		if  ($(this).hasClass('menu')){
 
@@ -18,21 +20,21 @@ export function menu() {
 
 			$('.secondary-menu').removeClass('active');
 
-			$('.overlay-close').removeClass('menu');
+			$('button.hamburger.is-active').removeClass('menu');
 
 			$('a.nav-link').removeClass('active');
 
 		} else {
 
-			$('.overlay').removeClass('open');
 
 		}
 
 	});
 
+
 	$('a[data-toggle="pill"]').on('shown.bs.tab', function (e) {
 
-		$('.overlay-close').addClass('menu');
+		$('button.hamburger').toggleClass('menu');
 
 		$('.nav-close').removeClass("d-none");
 
@@ -60,17 +62,27 @@ export function menu() {
 
 	$('.card').on('show.bs.collapse', function (e) {
 
-	  $(this).find('.caret').addClass('show');
+		$('a.collapsed').addClass('menu-active');
 
-	  $(this).find('.caret').removeClass('hide');
+		$(this).find('.caret').addClass('show');
+
+		$(this).find('.caret').removeClass('hide');
 
 	});
 
 	$('.card').on('hide.bs.collapse', function () {
 
-	  $(this).find('.caret').removeClass('show');
+		$(this).find('.caret').removeClass('show');
 
-	  $(this).find('.caret').addClass('hide');
+		$(this).find('.caret').addClass('hide');
+
+	});
+
+	$('.card').on('hidden.bs.collapse', function () {
+
+		$(this).find('.caret').removeClass('show');
+
+		$(this).find('.caret').addClass('hide');
 
 	});
 

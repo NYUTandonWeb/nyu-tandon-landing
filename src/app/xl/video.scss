@@ -1,5 +1,5 @@
 video.full-vid {
-    height: 100vh;
+    @include homegrid-height;
 }
 
  video {

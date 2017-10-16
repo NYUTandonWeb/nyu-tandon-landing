@@ -1,0 +1,35 @@
+// https://jonsuh.com/hamburgers/
+
+.hamburger {
+    padding: 20px 15px 15px;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    z-index: 9;
+    border-radius: 0;
+
+    // .hamburger-inner {
+    //     width:30px;
+    // }
+
+    // &.is-active{
+    //     .hamburger-inner {
+    //             width: 40px;
+    //     }
+    // }
+
+    // .hamburger-inner {
+
+    //     &,
+    //     &::before,
+    //     &::after {
+    //         transition-duration: .14s;
+    //     }
+
+    // }
+
+}
+
+
+
+

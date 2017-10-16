@@ -53,31 +53,46 @@ $("#video-info").popover({ trigger: "manual" , html: true, animation:false})
 
     // Play
     on('.js-play', 'click', function() {
+
       instance.play();
+
     });
 
     // Pause
     on('.js-pause', 'click', function() {
+
       instance.pause();
+
     });
 
+    // pause / play video on hamburger click
+    $('button.hamburger').on('click',function(){
 
-    $('.logo').on('click', function(){
+      $('img.js-pause').toggleClass('d-none');
 
-      instance.pause();
+      $('img.js-play').toggleClass('d-none');
+
+      if ('video'.paused) {
+
+        instance.play();
+
         $('img.js-pause').addClass('d-none');
+
         $('img.js-play').removeClass('d-none');
 
-    });
+      } else if('video'.play) {
 
-    $('.overlay-close').on('click', function(){
+        instance.pause();
 
-      instance.play();
         $('img.js-play').addClass('d-none');
+
         $('img.js-pause').removeClass('d-none');
+
+      }
+
     });
 
-
+    // pause / play on video popup
     $('.youtube').on('show.bs.modal', function (e) {
 
       instance.pause();
@@ -115,9 +130,12 @@ $("#video-info").popover({ trigger: "manual" , html: true, animation:false})
   });
 
 
-$('#video-info').on('shown.bs.tooltip', function () {
-      $('.tooltip.bs-tooltip-right .arrow').show();
-});
+  // youtube tooltip
+  $('#video-info').on('shown.bs.tooltip', function () {
+
+    $('.tooltip.bs-tooltip-right .arrow').show();
+
+  });
 
 
 (($ => {

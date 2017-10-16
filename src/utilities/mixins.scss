@@ -1,10 +1,13 @@
 @mixin logo-placement {
 	position: absolute;
-	left: 43px;
-	top: 30px;
-    width: 500px;
+	left: 80px;
+	top: 1px;
+    width: 250px;
     height: 80px;
     cursor: pointer;
 }
 
+@mixin homegrid-height {
+	height: calc(100vh - 80px);
+}
 

@@ -1,12 +1,11 @@
 header {
-  position: absolute;
-  top: 0;
-  height: 165px;
-  display: inline-block;
-  width: 100%;
-  z-index: 9;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, .75) 0%, rgba(0, 0, 0, 0) 100%);
-
+    position: absolute;
+    top: 0;
+    //height: 165px;
+    display: inline-block;
+    width: 100%;
+    z-index: 9;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, .75) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .logo {

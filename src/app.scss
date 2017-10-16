@@ -1,7 +1,13 @@
 @import 'global';
 
+.container{
+  max-width: 1525px !important;
+}
+
 @import './utilities/*';
 @import './bootstrap/*';
+@import '../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
+// @import '../node_modules/font-awesome/scss/font-awesome.scss';
 
 
 /**
@@ -36,3 +42,4 @@
  @media ( min-width: map-get( $grid-breakpoints, xl ) ) {
    @import './app/xl/**/*';
  }
+
